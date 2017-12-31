@@ -109,6 +109,7 @@ void WayloFfmsynth3AudioProcessor::prepareToPlay (double sampleRate, int samples
     // initialisation that you need..
     lastSampleRate = sampleRate;
     ignoreUnused(samplesPerBlock);
+    mySynth.setCurrentPlaybackSampleRate(lastSampleRate);
 }
 
 void WayloFfmsynth3AudioProcessor::releaseResources()
