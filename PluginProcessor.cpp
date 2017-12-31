@@ -105,9 +105,9 @@ void WayloFfmsynth3AudioProcessor::changeProgramName (int index, const String& n
 //==============================================================================
 void WayloFfmsynth3AudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-    // Use this method as the place to do any pre-playback
-    // initialisation that you need..
-    lastSampleRate = sampleRate;
+    lastSampleRate = WayloFfmsynth3AudioProcessor::getSampleRate();
+    maxiSettings::sampleRate = lastSampleRate;
+    
     ignoreUnused(samplesPerBlock);
     mySynth.setCurrentPlaybackSampleRate(lastSampleRate);
 }
