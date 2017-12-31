@@ -18,6 +18,9 @@ A basic  build of the synth created in this youtube video
 
 https://www.youtube.com/watch?v=kxKEFTQRZPI
 
+These classes have most of the GUI code commented out .. 
+It is meant as a base to start testing synthesizers .. 
+
 synth has one oscillator an ADSR and a filter 
 
 Create a new JUCE audio plugin and check "is a synth, accepts midi in , accepts midi out " 
